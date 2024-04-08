@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game with Colors</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <h1>&#127880; Colors Memory Game &#129337;</h1>
+    <div class="divsContainer">
+        <div class="card red" id="red"></div>
+        <div class="card blue" id="blue"></div>
+        <div class="card yellow" id="yellow"></div>
+        <div class="card green" id="green"></div>
+    </div>
+
+    <div class="on-game-container hidden" id="on-game-container">
+        <p id="instructions">Click on the squares in the order they were displayed!</p>
+        <div class="results" id="results">
+          <p id="results-text">Results:</p>
+  
+          <div class="results-container" id="results-container">
+            <!-- <div class="correct-result"></div>
+            <div class="wrong-result"></div> -->
+          </div>
+        </div>
+      </div>
+
+    <button class="button" id="button">Start playing!</button>
+    <script src="./index.js"></script>
+</body>
+</html>
+
