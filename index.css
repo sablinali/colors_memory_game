@@ -5,7 +5,7 @@ body{
 
 h1{
     text-align: center;
-    color:#E9679B;
+    color:deeppink;
     font-size: 50px;
     font-weight: bold;
 }
@@ -56,7 +56,7 @@ h1{
     margin: auto;
     display: block;
     margin-top: 60px;
-    color: #4C5270;
+    color:black;
     font-size: bold;
     font-size: 20px;
     
