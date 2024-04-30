@@ -12,9 +12,11 @@ function playRightSound() {
   correct.play();
 }
 
-function playWeeSound() {
-  let wee = new Audio("audios/wee-sound-effect.mp3");
-  wee.play();
+function playWinSound() {
+  let wee = new Audio(
+    "audios/zapsplat_multimedia_game_sound_win_complete_game_congratulations_harp_glissando_with_fanfare_and_fireworks_79053.mp3"
+  );
+  win.play();
 }
 
 function generateRandomIndex(max) {
@@ -48,13 +50,13 @@ function checkColors(turn, clickedColor) {
     playRightSound();
 
     if (turn === shuffledCards.length - 1) {
-      playWeeSound();
-      alert("You won!");
+      playWinSound();
+      alert("Right choice!");
       setTimeout(() => {}, 3000);
     }
   } else {
     playWrongSound();
-    alert("You lost!");
+    alert("Wrong choice!");
     // displayAndFadeColors();
   }
 }
