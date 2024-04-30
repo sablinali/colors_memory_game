@@ -3,7 +3,9 @@ let shuffledCards = [];
 let turn = 0;
 
 function playWrongSound() {
-  let wrong = new Audio("audios/Buzzer-sound.mp3");
+  let wrong = new Audio(
+    "audios/multimedia_game_sound_soft_dull_tone_lose_fail_52986.mp3"
+  );
   wrong.play();
 }
 
@@ -13,7 +15,7 @@ function playRightSound() {
 }
 
 function playWinSound() {
-  let wee = new Audio(
+  let win = new Audio(
     "audios/zapsplat_multimedia_game_sound_win_complete_game_congratulations_harp_glissando_with_fanfare_and_fireworks_79053.mp3"
   );
   win.play();
@@ -51,12 +53,12 @@ function checkColors(turn, clickedColor) {
 
     if (turn === shuffledCards.length - 1) {
       playWinSound();
-      alert("Right choice!");
+      alert("You win!");
       setTimeout(() => {}, 3000);
     }
   } else {
     playWrongSound();
-    alert("Wrong choice!");
+    alert("Sorry, you lost!");
     // displayAndFadeColors();
   }
 }
