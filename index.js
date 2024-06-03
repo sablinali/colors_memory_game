@@ -21,6 +21,11 @@ function playWinSound() {
   win.play();
 }
 
+function playLoseSound() {
+  let lose = new Audio("audios / lose_game.mp3");
+  lose.play();
+}
+
 function generateRandomIndex(max) {
   //This will generate a number between 0 and max
   return Math.floor(Math.random() * max);
@@ -53,12 +58,12 @@ function checkColors(turn, clickedColor) {
 
     if (turn === shuffledCards.length - 1) {
       playWinSound();
-      alert("You win!");
+      alert("You win! 🥰");
       setTimeout(() => {}, 3000);
     }
   } else {
     playWrongSound();
-    alert("Sorry, you lost!");
+    alert("Sorry, you lost! 🥲");
     // displayAndFadeColors();
   }
 }
@@ -79,16 +84,16 @@ const greenSquareEl = document.querySelector("#green");
 const startButtonEl = document.querySelector("button");
 
 redSquareEl.addEventListener("click", () => {
-  alert("red");
+  alert("red 🔴");
 });
 blueSquareEl.addEventListener("click", () => {
-  alert("blue");
+  alert("blue 🔵");
 });
 yellowSquareEl.addEventListener("click", () => {
-  alert("yellow");
+  alert("yellow 🟡");
 });
 greenSquareEl.addEventListener("click", () => {
-  alert("green");
+  alert("green 🟢");
 });
 startButtonEl.addEventListener("click", () => makeAllSquaresWhite());
 
